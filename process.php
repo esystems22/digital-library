@@ -12,6 +12,8 @@ if(isset($_POST['btn_reg'])){
     $course = $_POST['course'];
     $password = $_POST['pwd'];
     $cpassword = $_POST['cpwd'];
+
+    $sql = "INSERT INTO students";
 }
 
 
