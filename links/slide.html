@@ -1,0 +1,19 @@
+var slide = document.getElementById('slides');
+
+var items = ['url("images/img1")','link2','link3'];
+
+var active = "True";
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve,ms));
+}
+
+async function slp(){
+
+    while(active){
+        for (var i=0;i<items.length;i++){
+            slide.style.background = items.i;
+            await sleep(4000);
+        }
+    }
+}
