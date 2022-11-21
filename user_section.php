@@ -12,6 +12,7 @@
     <div class="container">
         <div class="content" id="div1">
         <h2>User Registration Form</h2>
+        <?php include_once "errors.php"; ?>
         <div class="content">
 
         </div>
