@@ -30,14 +30,19 @@ if(isset($_POST['btn_reg'])){
 
     //Register user if there is no any error.
     if(count($errors)==0){
-        $sql = "INSERT INTO students (fname, username, regno, department, level, course, pass) VALUES('$fname', '$username', '$regno', '$department', '$level', '$course', '$pass')";
+        $password = md5($password);
+        $sql = "INSERT INTO students (fname, username, regno, department, level, course, pass) VALUES('$fname', '$username', '$regno', '$depart', '$level', '$course', '$password')";
         $result = mysqli_query($conn, $sql);
-        header("Location: user_section.php");
+        header("Location: user_login.php");
     }
 
     
 
 }
+
+
+//LOGIN SECTION
+
 
 
 

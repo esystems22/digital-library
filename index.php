@@ -21,7 +21,7 @@
 
             <!-- Homepage Showing Admin and User Section -->
 
-            <a href="user_section.php"><div class="student">
+            <a href="user_login.php"><div class="student">
                 <div class="la la-user"></div>
                 <h3>User Section</h3>
             </div></a>

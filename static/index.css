@@ -6,18 +6,21 @@ body{
 }
 
 .container{
-    margin: 150px;
+    margin: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap:20px;
 }
 
 .content1{
     width: 75%;
     height: 300px;
     background-image: url('../images/bg1.jpg');
+    /* background-size: cover; */
     border-radius: 2rem;
     box-shadow: 2px 5px 2px 5px black;
+    margin-top: -80px;
 }
 
 .content2{
@@ -30,7 +33,22 @@ body{
     align-items: center;
     justify-content: center;
     gap: 3rem;
-    font-size: 40px;
+    /* font-size: 40px; */
     font-family: sans-serif;
     color: purple
 }
+
+
+h3{
+    font-size: 30px;
+}
+
+.la{
+    font-size: 60px;
+    /* color: white; */
+}
+
+.admin, .student{
+    text-align: center;
+}
+
