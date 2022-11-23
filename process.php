@@ -24,9 +24,9 @@ if(isset($_POST['btn_reg'])){
     if(empty($cpassword)){array_push($errors, "Confirm Password Required");}
     if(($password!=$cpassword)){array_push($errors, "Passwords Mistmatched");}
 
-    $sql = "SELECT * FROM students WHERE username='$username' OR regno='$regno'";
-    $res = mysqli_query($conn, $sql);
-    if(mysqli_num_rows($res)>0){array_push($errors, "User Already Exist");}
+    $sql = "SELECT * FROM students WHERE username='$username'";
+    $result1 = mysqli_query($conn, $sql);
+    if(mysqli_num_rows($result1)>0){array_push($errors, "User Already Exist");}
 
     //Register user if there is no any error.
     if(count($errors)==0){

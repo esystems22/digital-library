@@ -13,8 +13,7 @@
     <div class="container">
         
         <?php include_once "errors.php"; ?>
-       
-      
+             
         <h2>User Registration Form</h2>
             <form action="user_reg.php" method="post">
                 <div class="form-group">

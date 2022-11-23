@@ -11,7 +11,8 @@
    <?php include "process.php"; ?>
     <div class="container">
         <div class="content" id="div1">
-        
+        <?php  include "errors.php"; ?>
+
         
         </div>
         <div class="content" id="div2">
