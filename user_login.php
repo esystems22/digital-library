@@ -16,7 +16,7 @@
         </div>
         <div class="content" id="div2">
             <h2>User Login</h2>
-            <form action="admin_section.php" method="post">
+            <form action="user_login.php" method="post">
                 <div class="form-group">
                     <label for="Username">Username</label><br>
                     <input type="text" placeholder="Enter Username" name="username">

@@ -42,7 +42,27 @@ if(isset($_POST['btn_reg'])){
 
 
 //LOGIN SECTION
+if(isset($_POST['btn_login'])){
+    //variables
+    $username = $_POST['username'];
+    $password = $_POST['pwd'];
 
+
+    //Validations
+    if(empty($username)){array_push($errors, "Username Required");}
+    if(empty($password)){array_push($errors, "Password Required");}
+
+    //If there is no any error(s)
+    if(count($errors)==0){
+        $password = md5($password);
+        $sql = "SELECT * FROM students WHERE username='$username' AND pass='$password' LIMIT 1";
+        $res = mysqli_query($conn, $sql);
+
+        if(mysqli_num_rows($res)==1){
+            header("Location: user_dashboard.php");
+        }
+    }
+}
 
 
 
